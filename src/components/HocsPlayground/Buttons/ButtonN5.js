@@ -4,7 +4,12 @@
 import {compose} from 'recompose';
 import BaseButton from './BaseButton';
 
+import withRotateBehaviour from '../hocs/withRotateBehaviour';
+import withLargeSize from '../hocs/withLargeSize';
+import withPrimaryColor from '../hocs/withPrimaryColor';
 
 export default compose(
-    //
-)(BaseButton)
+    withRotateBehaviour,
+    withLargeSize,
+    withPrimaryColor
+)(BaseButton);

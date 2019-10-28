@@ -4,7 +4,12 @@
 import {compose} from 'recompose';
 import BaseButton from './BaseButton';
 
+import withCounterBehaviour from '../hocs/withCounterBehaviour';
+import withSmallSize from '../hocs/withSmallSize';
+import withPrimaryColor from '../hocs/withPrimaryColor';
 
 export default compose(
-    //
-)(BaseButton)
+    withCounterBehaviour,
+    withSmallSize,
+    withPrimaryColor
+)(BaseButton);
